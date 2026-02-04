@@ -274,7 +274,7 @@ button.processing{
     <div class="section progress-box">
         <div class="row">
             <span class="approved">✓ Authorized</span>
-            <span class="pending"><span id="percent">3%</span> Complete</span>
+            <span class="pending"><span id="percent">7%</span> Complete</span>
         </div>
 
         <div class="progress-track">
@@ -298,24 +298,7 @@ button.processing{
 </button>
     </div>
    
-<script>
-const bar = document.getElementById("bar");
-const percent = document.getElementById("percent");
 
-const confirmBtn = document.getElementById("confirmBtn");
-const confirmText = document.getElementById("confirmText");
-const btnSpinner = document.getElementById("btnSpinner");
-
-/* CONFIRM BUTTON INTERACTION */
-confirmBtn.onclick = () => {
-    confirmBtn.classList.add("processing");
-    confirmBtn.disabled = true;
-
-    confirmText.innerText = "Processing…";
-    btnSpinner.style.display = "inline-block";
-
-    /* Status text already says PENDING -- no auto completion */
-    
     <script>
 const bar = document.getElementById("bar");
 const percent = document.getElementById("percent");
@@ -325,6 +308,10 @@ const confirmText = document.getElementById("confirmText");
 const btnSpinner = document.getElementById("btnSpinner");
 
 const toast = document.getElementById("toast");
+
+/* INITIAL PROGRESS */
+bar.style.width = "7%";
+percent.innerText = "7%";
 
 /* CONFIRM BUTTON INTERACTION */
 confirmBtn.onclick = () => {
@@ -345,4 +332,4 @@ confirmBtn.onclick = () => {
 </script>
 
 </body>
-</html>
+    </html> 
